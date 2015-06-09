@@ -36,6 +36,28 @@
 
 #include <iostream>
 
+template< typename TPoint >
+double
+OrientationTest( TPoint a, TPoint b, TPoint c )
+{
+
+  double pa[2];
+  double pb[2];
+  double pc[2];
+
+  pa[0] = a[0];
+  pa[1] = a[1];
+
+  pb[0] = b[0];
+  pb[1] = b[1];
+
+  pc[0] = c[0];
+  pc[1] = c[1];
+
+  return orient2d(pa, pb, pc);
+
+}
+
 namespace itk
 {
 

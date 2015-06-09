@@ -3,7 +3,7 @@ cmake_minimum_required( VERSION 2.8 )
 project( WalkInTriangulation )
 
 find_package( ITK REQUIRED ) 
-include( ${USE_ITK_FILE} ) 
+include( ${ITK_USE_FILE} ) 
 
 include_directories( ${PROJECT_SOURCE_DIR}/src )
 include_directories( ${PointInCircle_DIR} )
